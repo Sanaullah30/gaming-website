@@ -1,0 +1,69 @@
+body {
+    margin: 0px;
+}
+
+/* Shared styles start*/
+:root {
+    --primary-color: #FF42A5;
+    --secondary-color: #0B0223;
+    ;
+}
+
+/* Work sans google fonts  start*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%)); */
+
+/* Work sans google fonts end */
+
+/* Heading styles start  */
+/* Shared styles end*/
+.nav {
+    height: 12vh;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 240px;
+}
+
+.logo img {
+    width: 86px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 2.81rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.logo .gee {
+    color: var(--primary-color);
+}
+
+.menu>ul {
+    display: flex;
+}
+
+.menu>ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu>ul li a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+}

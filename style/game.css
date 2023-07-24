@@ -20,15 +20,17 @@ body {
 
 /* Work sans google fonts end */
 
-/* Heading styles start  */
 /* Shared styles end*/
+
+
+/* Nav styles start  */
 .nav {
     height: 12vh;
     background-color: beige;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 240px;
+    padding: 10px 230px;
 }
 
 .logo img {
@@ -54,11 +56,16 @@ body {
 
 .menu>ul {
     display: flex;
+    align-items: center;
+}
+
+.menu>ul :last-child {
+    margin: 0px;
 }
 
 .menu>ul li {
     list-style: none;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .menu>ul li a {
@@ -67,3 +74,59 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+.menu .fontawesome {
+    display: flex;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 0.5rem 0.8rem;
+}
+
+.menu .fontawesome i {
+    margin-left: 1rem;
+}
+
+.menu .fontawesome #youtube {
+    color: #F61C0D;
+}
+
+.menu .fontawesome #tiktok {
+    color: #000000;
+
+}
+
+
+/* Nav styles end  */
+
+
+/* -------------------------------------------------- */
+
+
+/* Media Query Nav styles start  */
+@media screen and (max-width:576px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0px;
+
+    }
+
+    .menu>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menu>ul li {
+        margin-bottom: 0.5rem;
+        margin-right: 0px;
+    }
+
+
+
+}
+
+/* Media Query Nav styles end  */

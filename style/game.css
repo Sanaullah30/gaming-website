@@ -16,6 +16,23 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+* h3 {
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 100px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+* p {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 /* background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%)); */
 
 /* Work sans google fonts end */
@@ -86,6 +103,10 @@ body {
     padding: 0.5rem 0.8rem;
 }
 
+.menu .fontawesome a {
+    text-decoration: none;
+}
+
 .menu .fontawesome i {
     margin-left: 1rem;
 }
@@ -121,13 +142,13 @@ body {
     fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
 }
 
-.banner-content h3 {
+/* .banner-content h3 {
     color: #0B0223;
     font-size: 2rem;
     font-weight: 600;
     margin: 100px 0px 0px 0px;
     text-transform: uppercase;
-}
+} */
 
 .banner-content h1 {
     font-size: 4rem;
@@ -147,8 +168,10 @@ body {
 .support_game {
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
 }
 
+/* 
 .banner-content .play p,
 .no-download p,
 .support_game p {
@@ -157,7 +180,8 @@ body {
     font-weight: 500;
     text-transform: lowercase;
     margin-bottom: 0px;
-}
+    margin-top: 0px;
+} */
 
 .banner-content .play i {
     color: #FF42A5;
@@ -189,8 +213,6 @@ body {
 
 .banner-content .button .sign-in {
     padding: 13px 40px;
-    align-items: flex-start;
-    gap: 10px;
     background-color: #FF42A5;
     border-radius: 3rem;
     margin-right: 1rem;
@@ -198,10 +220,17 @@ body {
 
 .banner-content .button .go-rogue {
     padding: 13px 36px;
-    align-items: flex-start;
-    gap: 10px;
     border-radius: 48px;
     background: #4EC5F7;
+}
+
+.banner-content .button .sign-in a,
+.go-rogue a {
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .banner-image {
@@ -212,19 +241,55 @@ body {
     width: 100%;
 }
 
+/* card-section start */
+.card-section{
+    padding: 0 10rem 6rem 10rem;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-content p{
+    margin-top: 1rem;
+}
+
+.card-section .card{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.rectangle-card img{
+    width: 100%;
+}
+
+.rectangle-card img:hover {
+    filter: opacity(0.9) drop-shadow(0 0 #000);
+}
+
+/* card-section end */
 /* Banner section end */
 /* -------------------------------------------------- */
 
 
-/* Media Query Nav styles start  */
+/* Media Query styles start  */
 @media screen and (max-width:576px) {
     .nav {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 65vh;
         padding: 0px;
+        justify-content: flex-start;
+
 
     }
+
+    .logo p {
+        margin-bottom: 30px;
+    }
+
 
     .menu>ul {
         display: flex;
@@ -239,8 +304,83 @@ body {
         margin-right: 0px;
     }
 
+    .banner {
+        flex-direction: column;
+        padding-left: 6rem;
+        padding-right: 2.5rem;
+        order: 2;
+    }
+
+    .banner-content {
+        order: 2;
+        width: 100%;
+        height: 90vh;
+        padding: 0px;
+        margin: 0px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+
+    .banner-content h3 {
+        color: #0B0223;
+        font-size: 1rem;
+        margin-top: 70px;
+        margin-left: 5rem;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        margin-left: 4.9rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .banner-content .play i {
+        margin-left: 5rem;
+    }
+
+    .banner-content .no-download i {
+        margin-left: 5rem;
+    }
+
+    .banner-content .support_game i {
+        margin-left: 5rem;
+    }
+
+    .banner-content .play p,
+    .no-download p,
+    .support_game p {
+        color: #534C64;
+        font-size: 0.9rem;
+
+    }
+
+    .banner-content .button .sign-in {
+        padding: 13px 40px;
+        margin-left: 5rem;
+    }
+
+    .banner-content .button .go-rogue {
+        padding: 13px 36px;
+
+        border-radius: 3rem;
+    }
+
+    .banner-image {
+        order: 1;
+        width: 100%;
+        padding-right: 0px;
+    }
+
+
 
 
 }
 
-/* Media Query Nav styles end  */
+/* Media Query styles end  */

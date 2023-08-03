@@ -241,34 +241,43 @@ body {
     width: 100%;
 }
 
-/* card-section start */
-.card-section{
+/* =========card-section start========== */
+.card-section {
     padding: 0 10rem 6rem 10rem;
 }
+
 .card-content {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.card-content>p{
+.card-content>h3>span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-content>p {
     margin-top: 1rem;
 }
 
-.card-section .card{
+.card-section .card {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.rectangle-card{
+.rectangle-card {
     position: relative;
 }
 
-.rectangle-card img{
+.rectangle-card img {
     width: 100%;
 }
-.rectangle-card i{
+
+.rectangle-card i {
     color: #f1f2f6;
     opacity: 0.0;
     font-size: 2rem;
@@ -277,7 +286,8 @@ body {
     left: 7.5rem;
     transition: 1s;
 }
-.rectangle-card>p{
+
+.rectangle-card>p {
     color: #FF42A5;
     opacity: 0.0;
     font-size: 1rem;
@@ -288,21 +298,21 @@ body {
     transition: 1s;
 }
 
-.rectangle-card:hover img{
+.rectangle-card:hover img {
     filter: opacity(0.9) drop-shadow(0 0 #000);
     border: 3px solid #fa4da6;
-    border-radius: 13px;
+    border-radius: 14px;
 }
 
-.rectangle-card:hover i{
+.rectangle-card:hover i {
     opacity: 1;
 }
 
-.rectangle-card:hover>p{
+.rectangle-card:hover>p {
     opacity: 1;
 }
 
-.rectangle-card .card-content-below>p{
+.rectangle-card .card-content-below>p {
     color: #534C64;
     font-size: 1rem;
     font-weight: 500;
@@ -310,6 +320,7 @@ body {
     text-align: left;
     margin-top: 1rem;
 }
+
 /* card-section end */
 /* Banner section end */
 /* -------------------------------------------------- */
@@ -419,7 +430,49 @@ body {
         padding-right: 0px;
     }
 
+    /* Card-section start */
+    .card-section {
+        padding: 0 6rem 6rem 6rem;
+    }
 
+    .rectangle-card{
+        margin-bottom: 1.5rem;
+    }
+
+    .rectangle-card:hover img {
+        border-radius: 1.4rem;
+    }
+
+    .card-content>h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-content>p {
+        font-size: 0.9rem;
+    }
+
+    .card-section .card {
+        flex-direction: column;
+    }
+
+    .rectangle-card i {
+        color: #f1f2f6;
+        opacity: 0.0;
+        font-size: 2rem;
+        position: absolute;
+        top: 12rem;
+        left: 10.5rem;
+        transition: 1s;
+    }
+
+    .rectangle-card>p {
+        top: 14.8rem;
+        left: 8.5rem;
+    }
+    .rectangle-card .card-content-below>p {
+        font-size: 0.8rem;
+    }
+    /* Card-section end */
 
 
 }

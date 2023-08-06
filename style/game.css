@@ -96,26 +96,26 @@ body {
     font-weight: 500;
 }
 
-.menu .fontawesome {
+.menu .fontawesome_icon {
     display: flex;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 0.5rem 0.8rem;
 }
 
-.menu .fontawesome a {
+.menu .fontawesome_icon a {
     text-decoration: none;
 }
 
-.menu .fontawesome i {
+.menu .fontawesome_icon i {
     margin-left: 1rem;
 }
 
-.menu .fontawesome #youtube {
+.menu .fontawesome_icon #youtube {
     color: #F61C0D;
 }
 
-.menu .fontawesome #tiktok {
+.menu .fontawesome_icon #tiktok {
     color: #000000;
 
 }
@@ -327,18 +327,22 @@ body {
 
 /* play-section-start */
 
-.play-section{
+.play-section {
     display: flex;
     padding-left: 14rem;
     padding-right: 10rem;
 }
-.play-content{
+
+.play-content {
+    display: flex;
     width: 50%;
     text-align: right;
-    padding-right: 11.25rem;
+    padding-right: 9rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-.play-content>h3{
+.play-content>h3 {
     line-height: 2.5rem;
     margin-bottom: 1.2rem;
 }
@@ -350,21 +354,71 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.play-image{
+.play-image {
     width: 50%;
     position: relative;
 }
-.play-image img{
+
+.play-image img {
     width: 100%;
 }
 
-.play-image .play-image-two{
+.play-image .play-image-two {
     width: 50%;
     position: absolute;
     left: -6.5rem;
     bottom: -2.5rem;
+}
 
 /* play-section-end */
+
+/* Games-section-start */
+
+.games-section {
+    margin-top: 7rem;
+    padding: 6rem 10rem 6rem 10rem;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.games-section-one{
+    margin-bottom: 1.5rem;
+}
+.games-section-one,
+.games-section-two {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.games-section-one .games,
+.games-section-two .games {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+}
+
+
+.games-section p {
+    color: #0B0223;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.games-section img {
+    width: 20%;
+}
+
+/* .games-section-two .games{
+    width: 10rem;
+    height: 4rem;
+    background-color: #fff;
+} */
+
+/* Games-section-end */
 
 /* -------------------------------------------------- */
 
@@ -377,8 +431,6 @@ body {
         height: 65vh;
         padding: 0px;
         justify-content: flex-start;
-
-
     }
 
     .logo p {
@@ -478,7 +530,7 @@ body {
         padding: 0 6rem 6rem 6rem;
     }
 
-    .rectangle-card{
+    .rectangle-card {
         margin-bottom: 1.5rem;
     }
 
@@ -512,10 +564,56 @@ body {
         top: 14.8rem;
         left: 8.5rem;
     }
+
     .rectangle-card .card-content-below>p {
         font-size: 0.8rem;
     }
+
     /* Card-section end */
+
+    /* Play-instant-section start*/
+    .play-section {
+        flex-direction: column;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .play-content {
+        width: 100%;
+        text-align: center;
+        padding-right: 0rem;
+    }
+
+    .play-content>h3 {
+        margin-top: 0px;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    .play-content p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+
+    .play-image {
+        width: 100%;
+        position: relative;
+        margin-top: 4rem;
+    }
+
+    .play-image img {
+        width: 100%;
+    }
+
+    .play-image .play-image-two {
+        width: 50%;
+        position: absolute;
+        left: -4rem;
+        bottom: -2.5rem;
+    }
+
+    /* Play-instant-section start*/
 
 
 }

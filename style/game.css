@@ -418,6 +418,100 @@ body {
 
 /* Games-section-end */
 
+/* Footer section start */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.footer-logo,
+.footer-menu,
+.social-icon,
+.terms-menu,
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.footer .footer-content{
+    margin-bottom: 0;
+}
+
+.footer-logo img {
+    width: 86px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.footer-logo p {
+    font-size: 2.81rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-logo .gee {
+    color: var(--primary-color);
+}
+
+.footer-menu ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-menu ul>li {
+    list-style: none;
+}
+
+.footer-menu ul>li>a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.footer .social-icon {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer .social-icon i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.terms-menu ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.terms-menu ul>li {
+    list-style: none;
+}
+
+.terms-menu ul>li>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-content {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Footer section end */
+
 /* -------------------------------------------------- */
 
 
@@ -621,6 +715,7 @@ body {
     .games-types {
         gap: 0.5rem;
     }
+
     .games-types .games {
         padding: 0.3rem;
     }
@@ -630,6 +725,17 @@ body {
     }
 
     /* games-section  end*/
+
+    /* footer-section-start */
+    .footer{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .footer-menu ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    /* footer-section-end */
 
 
 }
